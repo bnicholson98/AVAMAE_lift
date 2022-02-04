@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "AVAMAE_lift/1.0.0": {
+        "runtime": {
+          "AVAMAE_lift.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AVAMAE_lift/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
