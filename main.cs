@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Text;
 using System.Runtime.CompilerServices;
+using System.Reflection;
 
 class Program
 {
@@ -10,10 +11,9 @@ class Program
 		// Lift set to begin at floor 5 (default floor).
 		Lift lift = new Lift(5);
 
-		var filePath = Directory.GetCurrentDirectory(); ;
-		var directory = "C:/Users/benzi/OneDrive/Documents/AVAMAE_lift/";
+		var directory = Directory.GetCurrentDirectory();
+		directory = Path.GetFullPath(Path.Combine(directory, "..\\..\\..\\"));
 		var path = Path.Combine(directory, "input_data.csv");
-		Console.WriteLine(path);
 		var reader = new StreamReader(path);
 
 		// Read first line to ignore headers.		
@@ -157,6 +157,7 @@ class Program
 		// Send output to csv.
 		var outputPath = Path.Combine(directory, "output_data.csv");
 		File.WriteAllText(outputPath, output.ToString());
+		Console.WriteLine("\nOutput file sent to: {0}", outputPath);
 
 		Console.WriteLine("\nPress any key to exit.");
 		Console.ReadKey();
