@@ -12,7 +12,6 @@ class Program
 		Lift lift = new Lift(5);
 
 		var directory = Directory.GetCurrentDirectory();
-		directory = Path.GetFullPath(Path.Combine(directory, "..\\..\\..\\"));
 		var path = Path.Combine(directory, "input_data.csv");
 		var reader = new StreamReader(path);
 
