@@ -7,4 +7,4 @@ My solution to the exercise consists of 3 cs files, all found within the same fo
 
 It takes an input 'input_data.csv' and will output 'output_data.csv'.
 
-The code can be run either through an IDE or by running the ‘AVAMAE_lift’ application in the ‘/bin’ folder.
+The code can be run either through an IDE or by running the ‘AVAMAE_lift’ application in the ‘/bin/debug/net6.0’ folder.
